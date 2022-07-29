@@ -17,3 +17,9 @@ console.log(header);
 var headertitle=document.getElementById('header-title');
 headertitle.style.border='solid 3px black';
 //document.write(header.text);
+var item=document.getElementsByClassName('list-group-item');
+for(let i=0;i<item.length;i++)
+{
+    item[i].style.fontWeight='bold';
+}
+item[2].style.backgroundColor="green";
