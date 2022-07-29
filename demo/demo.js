@@ -9,3 +9,4 @@ console.log(itemlist1.children);
 console.log(itemlist1.children[1]);
 console.log(itemlist1.lastChild);
 itemlist1.lastElementChild.style.color='red';
+itemlist1.firstElementChild.style.backgroundColor="yellowgreen";
