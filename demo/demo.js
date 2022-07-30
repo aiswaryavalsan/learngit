@@ -1,15 +1,10 @@
-var newdiv=document.querySelector('div');
-newdiv.className='helo1';
-newdiv.id='helo';
-newdiv.setAttribute('title','hello world!');
-var newdivtext=document.createTextNode("hello");
-var container=document.querySelector('container1');
-console.log(container);
-var h1=document.querySelector('header h1');
-console.log(h1);
-newdiv.appendChild(newdivtext);
-//container.insertBefore(newdiv,h1);
-console.log(newdivtext);
-console.log(newdiv);
+var parent=document.querySelector("#items");
+//var li=document.querySelector('.list-group-item');
+var newli=document.createElement('li');
+var litext=document.createTextNode("hello world");   
+newli.appendChild(litext);
+console.log(newli);
+console.log(parent);
+parent.innerHTML=newli.textContent+parent.innerHTML;
 
 
